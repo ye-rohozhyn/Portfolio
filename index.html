@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="fontawesome/css/all.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="hl">
+			<a href="#" class="custom-title cb" onclick="toggle_visibility('portfolio')">Rohozhyn Yevhen</a>
+		</div>
+
+		<div class="container hr">
+			<a href="#" class="header-item cb" onclick="toggle_visibility('portfolio')">Portfolio</a>
+			<a href="#" class="header-item cb" onclick="toggle_visibility('about')">About</a>
+		</div>
+	</header>
+	<main>
+		<div id="portfolio" class="container">
+			<div class="flex-block">
+				<div class="preview-item bw">
+					<p class="custom-title cb">Live computer!</p>
+
+					<img src="img/preview-live-computer.png" class="p-img">
+
+					<div class="btn-block">
+						<a href="https://youtu.be/zjjYVUgEQNs" class="btn br cw"> <i class="fa-brands fa-youtube"></i> YouTube</a>
+						<a href="https://github.com/ye-rohozhyn/Live_computer" class="btn bb cw"> <i class="fa-brands fa-github"></i> GitHub</a>
+					</div>
+				</div>
+				<div class="description-item bw">
+					<p class="custom-title cb">Description</p>
+					<p class="custom-text-sizeable cb">In this game, you need to fixing the breakdowns for some time, otherwise the computer will break. Game in development. The project files can be viewed on GitHub. Watch the gameplay on YouTube.<br/><br/>Platform: PC.<br/>Nickname on GitHub: ye-rohozhyn<br/><br/>My work:
+						<br/> - completion of 3d models;
+						<br/> - player controller;
+						<br/> - devices logic;
+						<br/> - saving progress & settings;
+						<br/> - adjusting physics;
+						<br/> - creating UI;</p>
+				</div>
+			</div>
+			
+			<div class="flex-block">
+				<div class="description-item bw">
+					<p class="custom-title cb">Description</p>
+					<p class="custom-text-sizeable cb">In this game, you assemble your tank and go to completing levels. Game in development. The project files can be viewed on GitHub. Watch the gameplay on YouTube.<br/><br/>Platform: PC.<br/>Nickname on GitHub: ye-rohozhyn<br/><br/>My work:
+						<br/> - creating 3d models;
+						<br/> - player controller;
+						<br/> - enemy AI;
+						<br/> - saving progress & settings;
+						<br/> - adjusting physics;
+						<br/> - creating UI;</p>
+				</div>
+
+				<div class="preview-item bw">
+					<p class="custom-title cb">Tanks</p>
+
+					<img src="img/preview-tanks.png" class="p-img">
+
+					<div class="btn-block">
+						<a href="https://youtu.be/1H9Ys4_lV0U" class="btn br cw"> <i class="fa-brands fa-youtube"></i> YouTube</a>
+						<a href="https://github.com/ye-rohozhyn/Tanks" class="btn bb cw"> <i class="fa-brands fa-github"></i> GitHub</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="about" class="container" style="display: none;">
+			<div class="flex-block">
+				<div class="about-item bw flex-block">
+					<img src="img/my-photo.png" class="p-img">
+					<div>
+						<p class="custom-title cb">About me</p>
+						<p class="custom-text cb">Hi, I'm Rohozhyn Yevhen, novice Unity developer. Ever since I was a child, I was interested in everything related to PC and games, so I decided to become a game developer. I'm currently pursuing a bachelor's degree in computer science. I'm still learning Unity 3d but I already have experience in developing games for Android and Windows.</p>
+						<p class="custom-title cb"><br/>What did I work with</p>
+						<p class="custom-text cb">
+							- creating and integrating animations;
+							<br/>- creating and import 3d models;
+							<br/>- unity UI;
+							<br/>- particle system;
+							<br/>- C# scripting;
+							<br/>- optimization games;
+							<br/>- git (Tortoise git, GitHub);</p>
+						<p class="custom-title cb"><br/>What I want learn</p>
+						<p class="custom-text cb">
+							- working with shaders;
+							<br/>- VFX Unity;
+							<br/>- Unity Bolt;
+							<br/>- VR;</p>
+						<p class="custom-title cb"><br/>Contact</p>
+						<p class="custom-text cb">Phone number: +380666127684<br/>E-mail: yerohozhyn@gmail.com<br/>Telegram: <a href="https://t.me/ye_rohozhyn" class="cb">@ye_rohozhyn</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<script type="text/javascript">
+	   function toggle_visibility(id) {
+	   		if(id == "portfolio"){
+	   			var e = document.getElementById("about");
+	   			e.style.display = 'none';
+	   			e = document.getElementById("portfolio");
+	   			e.style.display = 'block';
+	   		}
+	   		else if(id == "about"){
+	   			var e = document.getElementById("about");
+	   			e.style.display = 'block';
+	   			e = document.getElementById("portfolio");
+	   			e.style.display = 'none';
+	   		}
+	   }
+	</script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+/* Default styles */
+
+body{
+	background: black;
+}
+
+a{
+	text-decoration: none;
+}
+
+/* Header */
+
+header{
+    overflow: hidden;
+    padding: 20px 10px;
+    margin: 20px;
+    background: white;
+    border-radius: 20px;
+}
+
+.container{
+	display: block;
+	margin-top: 5px;
+}
+
+.header-item{
+	font-family: Roboto-Regular;
+	font-size: 24px;
+	margin: 10px 10px 10px 15px;
+	padding: 10px 15px;
+	border-radius: 15px;
+	transition: 0.3s;
+}
+
+.header-item:hover{
+	background: #f5f5f5;
+	transition: 0.3s;
+}
+
+.hl { float: left; }
+.hr { float: right; }
+
+/* Mobile header */
+
+@media screen and (max-width: 500px) {
+  header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .container{
+  	text-align: left;
+  }
+  
+  .hr {
+    float: none;
+  }
+}
+
+/* Text styles */
+
+.custom-title{
+	font-family: Roboto-Bold;
+	font-size: 32px;
+	margin: 10px 10px 10px 15px;
+}
+
+.custom-text-sizeable{
+	font-family: Roboto-Regular;
+	font-size: 24px;
+	margin: 10px 10px 10px 15px;
+	text-align: justify; 
+	line-height: 1.5;
+}
+
+.custom-text{
+	font-family: Roboto-Regular;
+	font-size: 24px;
+	margin: 10px 10px 10px 15px;
+	text-align: justify; 
+	line-height: 1.5;
+}
+
+
+.cw{
+	color: white;
+}
+
+.cb{
+	color: black;
+}
+
+/* Portfolio */
+
+.bw{
+	background: white;
+}
+
+.bb{
+	background: black;
+}
+
+.br{
+	background: red;
+}
+
+.preview-item{
+	width: 25%;
+	max-height: 540px;
+	display: block;
+	padding: 20px 10px;
+	margin: 20px;
+	border-radius: 20px;
+}
+
+.description-item{
+	width: 75%;
+	max-height: 540px;
+	padding: 20px 10px;
+	margin: 20px;
+	border-radius: 20px;
+}
+
+.about-item{
+	width: 100%;
+	padding: 20px 10px;
+	margin: 20px;
+	border-radius: 20px;
+}
+
+.p-img{
+	margin: 15px 10px 10px 15px;
+	width: 90%;
+	border-radius: 20px;
+}
+
+.btn{
+	margin: 5px;
+	padding: 15px;
+	border-radius: 15px;
+	font-family: Roboto-Regular;
+	transition: 0.15s;
+}
+
+.btn:hover{
+	padding: 17px;
+	transition: 0.15s;
+}
+
+.btn-block{
+	margin: 20px 15px;
+}
+
+.flex-block{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+@media screen and (max-width: 500px) {
+  	.flex-block{
+		display: block;
+    	flex-direction: row;
+    	flex-wrap: nowrap;
+	}
+
+	.preview-item{
+		width: 85%;
+	}
+
+	.description-item{
+		width: 85%;
+	}
+
+	.about-item{
+		width: 85%;
+	}
+
+	.custom-text-sizeable{
+		font-size: 14px;
+	}
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: lightgrey;
+    border-radius: 10px;
+}
